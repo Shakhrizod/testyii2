@@ -19,7 +19,7 @@ $this->title = 'My Yii Application';
     <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
             <?php
-            echo Gri::widget([
+            echo \kartik\grid\GridView::widget([
                 'id' => 'kv-grid-demo',
                 'dataProvider' => $patientsDataProvider,
                 'filterModel' => $patientsSearch,
@@ -83,7 +83,7 @@ $this->title = 'My Yii Application';
                 'responsive' => true,
                 'hover' => true,
                 'panel' => [
-                    'type' => Gri::TYPE_SUCCESS,
+                    'type' => \kartik\grid\GridView::TYPE_SUCCESS,
 
                     'heading' => '<h3 class="panel-title"><i class="glyphicon glyphicon-user"></i>  Пациенты</h3>',
                     'after' => false
